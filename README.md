@@ -41,7 +41,7 @@ A companion web server runs on any machine connected to the same network. Parent
 **Wiring**
 
 ```
-OLED  — SDA: GPIO 11, SCL: GPIO 12, RST: GPIO 8
+OLED  — Data: GPIO 11, Clk: GPIO 12, CS: GPIO 10, A0/DC: GPIO 9, RST: GPIO 8
 IMU   — SDA: GPIO 4,  SCL: GPIO 5
 Pot   — wiper: GPIO 7
 Buzzer— GPIO 13
