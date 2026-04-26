@@ -119,7 +119,7 @@ app.get('/question', async (req, res) => {
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user',   content: `Generate a ${difficulty} difficulty (${gradeHint}) quiz question about: ${subject}.` }
       ],
-      temperature: 1.0,
+      temperature: 0.4,
     });
 
     const raw = completion.choices[0].message.content.trim();
