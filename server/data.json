@@ -1,0 +1,170 @@
+{
+  "wakeups": [
+    {
+      "date": "2026-04-25",
+      "time": "07:15",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-24",
+      "time": "07:22",
+      "correct": 3,
+      "wrong": 1
+    },
+    {
+      "date": "2026-04-23",
+      "time": "07:30",
+      "correct": 2,
+      "wrong": 2
+    },
+    {
+      "date": "2026-04-22",
+      "time": "07:18",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-21",
+      "time": "07:45",
+      "correct": 3,
+      "wrong": 3
+    },
+    {
+      "date": "2026-04-20",
+      "time": "07:10",
+      "correct": 3,
+      "wrong": 1
+    },
+    {
+      "date": "2026-04-19",
+      "time": "07:25",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:25",
+      "correct": 3,
+      "wrong": 44
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:27",
+      "correct": 3,
+      "wrong": 24
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:27",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:30",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:32",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:33",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:35",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:41",
+      "correct": 3,
+      "wrong": 1
+    },
+    {
+      "date": "2026-04-26",
+      "time": "20:49",
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "date": "2026-04-26",
+      "time": "21:12",
+      "correct": 3,
+      "wrong": 4,
+      "difficulty": "easy"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "00:44",
+      "correct": 5,
+      "wrong": 7,
+      "difficulty": "medium"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "00:55",
+      "correct": 5,
+      "wrong": 13,
+      "difficulty": "hard"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "00:59",
+      "correct": 5,
+      "wrong": 8,
+      "difficulty": "hard"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "01:00",
+      "correct": 5,
+      "wrong": 4,
+      "difficulty": "hard"
+    }
+  ],
+  "subjects": {
+    "addition and subtraction": {
+      "correct": 8,
+      "attempts": 9
+    },
+    "multiplication and division": {
+      "correct": 5,
+      "attempts": 8
+    },
+    "US geography and states": {
+      "correct": 4,
+      "attempts": 6
+    },
+    "animals and habitats": {
+      "correct": 7,
+      "attempts": 8
+    },
+    "the solar system and planets": {
+      "correct": 6,
+      "attempts": 7
+    },
+    "grammar and parts of speech": {
+      "correct": 3,
+      "attempts": 6
+    },
+    "world capitals": {
+      "correct": 4,
+      "attempts": 5
+    },
+    "weather and seasons": {
+      "correct": 5,
+      "attempts": 5
+    }
+  },
+  "difficulty": "hard"
+}
