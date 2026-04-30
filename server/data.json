@@ -130,6 +130,20 @@
       "correct": 5,
       "wrong": 4,
       "difficulty": "hard"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "12:01",
+      "correct": 5,
+      "wrong": 0,
+      "difficulty": "hard"
+    },
+    {
+      "date": "2026-04-26",
+      "time": "12:05",
+      "correct": 5,
+      "wrong": 0,
+      "difficulty": "hard"
     }
   ],
   "subjects": {
@@ -166,5 +180,13 @@
       "attempts": 5
     }
   },
-  "difficulty": "hard"
+  "difficulty": "hard",
+  "enabledCategories": [
+    "Mathematics",
+    "Geography",
+    "Science & Nature",
+    "History & Social Studies",
+    "English & Language Arts",
+    "Arts & Culture"
+  ]
 }

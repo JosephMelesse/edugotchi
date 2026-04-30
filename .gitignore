@@ -1,1 +1,15 @@
+# Credentials — never commit these
 .env
+.env.local
+config.h
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hackathon prep docs
+PREP.md

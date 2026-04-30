@@ -6,7 +6,7 @@
  * Pot   : GPIO 7
  * Audio : SPEAKER_PIN -1 = disabled
  *
- * Change WIFI_SSID, WIFI_PASS, QUESTION_URL before flashing.
+ * Copy config.h.example → config.h and fill in credentials before flashing.
  * Partition: huge_app  (sprites.h ~3.6 MB)
  */
 
@@ -19,6 +19,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_SSD1327.h>
 #include "sprites.h"
+#include "config.h"
 
 // ── Pins ─────────────────────────────────────────────────────────
 #define OLED_SDA     11
@@ -29,11 +30,6 @@
 #define IMU_SCL       5
 #define POT_PIN       7
 #define SPEAKER_PIN  13   // set to -1 to disable audio
-
-// ── Wi-Fi / backend — edit these ─────────────────────────────────
-#define WIFI_SSID    "iPhone (8)"
-#define WIFI_PASS    "0a7kbshih4762"
-#define QUESTION_URL "http://172.20.10.6:3000/question"
 
 // ── Tuning ───────────────────────────────────────────────────────
 #define SHAKE_THRESH      15.0f  // m/s² total magnitude
@@ -79,8 +75,6 @@ State    state          = IDLE;
 uint8_t  currentAnim    = ANIM_STANBY;
 uint8_t  currentFrame   = 0;
 uint32_t lastFrameMs    = 0;
-bool     animCycleDone  = false;
-
 // Streak
 int currentStreak = 0;
 
@@ -453,7 +447,7 @@ void updateQuestionDisplay() {
     heldMs = millis() - zoneHeldSince;
   }
 
-  // 20-second timeout — slime gets angry and dies
+  // 100-second timeout — slime gets angry and dies
   uint32_t elapsed = millis() - questionStartMs;
   if (elapsed >= QUESTION_TIMEOUT_MS) {
     wrongCount++;
