@@ -1,5 +1,7 @@
 # Edugotchi
 
+![Edugotchi device](./edugotchi.jpg)
+
 A handheld educational toy built on the ESP32-S3 that quizzes you with AI-generated questions. Shake it to wake it up, answer 5 questions using the dial, and earn your score — all tracked for a parent to review on a web dashboard.
 
 ---
