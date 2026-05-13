@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edugotchi — Parent Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Edugotchi <span>Parent Dashboard</span></div>
+    <div class="status-badge">{{STATUS_MSG}}</div>
+  </header>
+
+  <main>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon">🔥</div>
+        <div class="stat-num c-amber">{{STREAK}}</div>
+        <div class="stat-label">Day Streak</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">✅</div>
+        <div class="stat-num c-purple">{{TOTAL_SESSIONS}}</div>
+        <div class="stat-label">Sessions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🎯</div>
+        <div class="stat-num c-green">{{ACCURACY}}%</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📈</div>
+        <div class="stat-label" style="margin-bottom:6px">Current Level</div>
+        <div class="stat-sub" style="font-size:1.1rem;font-weight:700;color:{{DIFF_COLOR}}">{{DIFFICULTY}}</div>
+        <div class="stat-label" style="margin-top:6px">Best Subject</div>
+        <div class="stat-sub">{{BEST_SUBJECT}}</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Learning Categories <span class="pill">quiz subjects</span></h2>
+      <p class="cat-hint">Choose which topics appear in your child's quizzes. Changes take effect on the next session.</p>
+      <div class="cat-grid">
+        {{CATEGORY_TOGGLES}}
+      </div>
+      <div id="cat-status" class="cat-status"></div>
+    </div>
+
+    <div class="card">
+      <h2>Subject Performance <span class="pill">by accuracy</span></h2>
+      {{SUBJECT_TABLE}}
+    </div>
+
+    <div class="card">
+      <h2>Session History <span class="pill">last {{RECENT_COUNT}}</span></h2>
+      {{SESSION_TABLE}}
+    </div>
+  </main>
+
+  <footer>Edugotchi v1.0 &nbsp;·&nbsp; Refresh to update</footer>
+
+  <script src="/portal.js"></script>
+</body>
+</html>
